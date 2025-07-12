@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Páginas principais -->
+  <url>
+    <loc>https://betgenios.com.br/index.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/apostas.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/renda-extra.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/economia.html</loc>
+  </url>
+
+  <!-- Exemplos de artigos -->
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-apps-pix.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-imagens-ia.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-planilhas.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-canva.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-voz-ia.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-servicos-br.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos/artigo-servicos-online.html</loc>
+  </url>
+
+  <!-- Exemplos de artigos - Economia -->
+  <url>
+    <loc>https://betgenios.com.br/artigos-economia/artigo-economia-limpeza-caseira.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos-economia/artigo-economia-energia.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos-economia/artigo-economia-reaproveitar.html</loc>
+  </url>
+  <url>
+    <loc>https://betgenios.com.br/artigos-economia/artigo-economia-kit-basico.html</loc>
+  </url>
+
+  <!-- Exemplos de artigos - Apostas -->
+  <url>
+      <loc>https://betgenios.com.br/artigos-apostas/apostas-gestao-banca.html</loc>
+  </url>
+  <url>
+      <loc>https://betgenios.com.br/artigos-apostas/apostas-odd-de-valor.html</loc>
+  </url>
+</urlset>

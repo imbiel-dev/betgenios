@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas de Economia Doméstica | BetGenios</title>
+  <meta name="description" content="Descubra dicas práticas de economia doméstica para gastar menos no dia a dia. Limpeza caseira, reaproveitamento de alimentos e compras inteligentes.">
+  <meta name="keywords" content="economia doméstica, economizar dinheiro, limpeza caseira, reaproveitamento de alimentos, kit de compras, BetGenios">
+  <meta name="author" content="BetGenios">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Menu Fixo -->
+  <header class="menu-fixo">
+    <img src="img/icon.png" alt="BetGenios" width="64">
+    <div class="logo">BetGenios</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="apostas.html">Apostas</a></li>
+        <li><a href="renda-extra.html">Renda Extra</a></li>
+        <li><a href="economia.html">Economia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <section class="artigos-recentes" style="margin-top: 6rem;">
+    <h2>💡 Dicas de Economia Doméstica</h2>
+
+    <div class="artigo">
+      <h3><a href="./artigos-economia/artigo-economia-limpeza-caseira.html">Produtos de Limpeza Caseiros que Funcionam</a></h3>
+      <p>Receitas simples e baratas com vinagre, detergente e bicarbonato que realmente limpam e ajudam a economizar.</p>
+    </div>
+
+    <div class="artigo">
+      <h3><a href="./artigos-economia/artigo-economia-energia.html">Como Economizar Energia sem Mudar sua Rotina</a></h3>
+      <p>Dicas práticas que reduzem a conta de luz sem abrir mão do conforto ou fazer grandes mudanças.</p>
+    </div>
+
+    <div class="artigo">
+      <h3><a href="./artigos-economia/artigo-economia-reaproveitar.html">Reaproveitamento de Alimentos: Economize de Verdade</a></h3>
+      <p>Transforme sobras de comida em novas refeições e descubra como evitar o desperdício na prática.</p>
+    </div>
+
+    <div class="artigo">
+      <h3><a href="./artigos-economia/artigo-economia-kit-basico.html">Kit Básico de Compras para o Mês</a></h3>
+      <p>Monte uma lista enxuta, econômica e inteligente para suprir as necessidades do mês gastando pouco.</p>
+    </div>
+
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>Se esse conteúdo te ajudou, me dá uma moral aí, amigo(a)! Qualquer valor já fortalece 💜</p>
+
+    <div class="pix-box">
+      <p>📲 Minha chave Pix:</p>
+      <input type="text" value="5719d5e8-4a0d-4d40-af6d-340ff2e6eb21" id="chavePix" readonly>
+      <button onclick="copiarPix()">Copiar chave</button>
+    </div>
+
+    <small>BetGenios © 2025 – Sem promessas, só ideias reais.</small>
+  </footer>
+
+  <script>
+    function copiarPix() {
+      const input = document.getElementById("chavePix");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Chave Pix copiada, meu amigo(a)! Valeu pela força 🙏");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetGenios | Apostas, Renda Extra e Economia</title>
+  <meta name="description" content="Conteúdo realista sobre apostas inteligentes, renda extra e economia doméstica. Aqui é sem enrolação, só ideias que funcionam.">
+  <meta name="keywords" content="apostas, renda extra, economia doméstica, ganhar dinheiro, BetGenios">
+  <meta name="author" content="BetGenios"> 
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Menu Fixo -->
+  <header class="menu-fixo">
+    <img src="img/icon.png" alt="BetGenios" width="64">
+    <div class="logo">BetGenios</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="apostas.html">Apostas</a></li>
+        <li><a href="renda-extra.html">Renda Extra</a></li>
+        <li><a href="economia.html">Economia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Parallax Hero -->
+  <section class="parallax">
+    <div class="conteudo-parallax">
+      <h2>BetGenios</h2>
+      <p>Pensar antes de apostar, gastar ou tentar ganhar dinheiro.</p>
+    </div>
+  </section>
+
+  <!-- Navegação Principal -->
+  <section class="secao-cards">
+    <h2>Escolha seu caminho:</h2>
+    <div class="grid-cards">
+      <div class="card"><a href="apostas.html">📊 Apostas Inteligentes</a></div>
+      <div class="card"><a href="renda-extra.html">💸 Renda Extra</a></div>
+      <div class="card"><a href="economia.html">🧼 Economia Doméstica</a></div>
+    </div>
+  </section>
+
+  <!-- Estatísticas de Apostas -->
+  <section class="secao-apostas">
+    <h2>📊 Apostas — Estatísticas do Dia</h2>
+    <p>Decida com base nos números, não na emoção. Aqui ninguém promete lucro, só transparência.</p>
+    <div class="tabela-apostas">
+      <table>
+        <thead>
+          <tr>
+            <th>Jogo</th>
+            <th>Over 2.5</th>
+            <th>Escanteios Médios</th>
+            <th>BTTS</th>
+            <th>Odds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flamengo x Vasco</td>
+            <td>72%</td>
+            <td>9.5</td>
+            <td>✅</td>
+            <td>1.85</td>
+          </tr>
+          <tr>
+            <td>Palmeiras x Santos</td>
+            <td>61%</td>
+            <td>8.2</td>
+            <td>❌</td>
+            <td>2.10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Renda Extra Destaques -->
+  <section class="secao-cards">
+    <h2>💸 Renda Extra Realista</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h3>📱 Apps que Pagam Via Pix</h3>
+        <p>Testei e listo os mais confiáveis pra ganhar um extra usando o celular.</p>
+        <a href="artigos/artigo-apps-pix.html">Ler artigo completo →</a>
+      </div>
+      <div class="card">
+        <h3>🤖 Vender Imagens Criadas com IA</h3>
+        <p>Você gera imagens grátis e vende em sites como Kiwify ou Etsy.</p>
+        <a href="artigos/artigo-imagens-ia.html">Ver passo a passo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>Se esse conteúdo te ajudou, me dá uma moral aí, amigo(a)! Qualquer valor já fortalece 💜</p>
+    <div class="pix-box">
+      <p>📲 Minha chave Pix:</p>
+      <input type="text" value="5719d5e8-4a0d-4d40-af6d-340ff2e6eb21" id="chavePix" readonly>
+      <button onclick="copiarPix()">Copiar chave</button>
+    </div>
+    <small>BetGenios © 2025 – Sem promessas, só ideias reais.</small>
+  </footer>
+
+  <script>
+    function copiarPix() {
+      const input = document.getElementById("chavePix");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Chave Pix copiada, meu amigo(a)! Valeu pela força 🙏");
+    }
+  </script>
+
+</body>
+</html>

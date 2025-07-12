@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatísticas Reais de Apostas | BetGenios</title>
+  <meta name="description" content="Veja estatísticas reais dos jogos e filtre por campeonato. Aqui é dado real, sem palpite furado. Informação na mão para você decidir melhor.">
+  <meta name="keywords" content="apostas esportivas, estatísticas de futebol, probabilidade de vitória, over gols, BTTS, escanteios, cartões, BetGenios">
+  <meta name="author" content="BetGenios">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bloqueado">
+
+  <!-- AVISO -->
+  <div class="aviso-overlay" id="aviso">
+    <div class="aviso-caixa">
+      <h2>⚠️ E aí, amigo(a)! Só um aviso rápido:</h2>
+        <p>
+          Aqui você encontra estatísticas reais e dados dos jogos.<br>
+          Mas ó, a decisão é sua — sem palpite, sem promessa de ganho. Aposta envolve risco. Jogue com responsabilidade, beleza?
+        </p>
+      <div class="botoes-aviso">
+        <button onclick="confirmarAcesso()">✅ Sim, quero acessar</button>
+        <button onclick="window.location.href='index.html'">🚪 Não, prefiro sair</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <header class="menu-fixo">
+    <img src="img/icon.png" alt="BetGenios" width="64">
+    <div class="logo"> BetGenios</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="apostas.html">Apostas</a></li>
+        <li><a href="renda-extra.html">Renda Extra</a></li>
+        <li><a href="economia.html">Economia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <!-- SCRIPTS -->
+  <script>
+    function confirmarAcesso() {
+      document.getElementById("aviso").style.display = "none";
+      document.body.classList.remove("bloqueado");
+    }
+
+    function copiarPix() {
+      const input = document.getElementById("chavePix");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Chave Pix copiada, meu amigo(a)! Valeu pela força 🙏");
+    }
+  </script>
+
+  
+  <main class="secao-apostas" style="padding-top: 7rem;">
+       
+    <h2>📂 Filtros por Campeonato</h2>
+    <div class="filtros-campeonato">
+      <button onclick="filtrar('todos')">Todos</button>
+      <button onclick="filtrar('Série A')">Série A</button>
+      <button onclick="filtrar('Série B')">Série B</button>
+      <button onclick="filtrar('Libertadores')">Libertadores</button>
+      <button onclick="filtrar('Sul-Americana')">Sul-Americana</button>
+    </div>
+
+    <div id="jogos-container"></div>
+
+    <section class="legenda">
+      <h4>📖 Entenda os Dados:</h4>
+      <p><strong>Over 1.5 / 2.5 / 3.5</strong>: Probabilidade de ter mais de 1, 2 ou 3 gols no jogo.</p>
+      <p><strong>BTTS</strong>: Both Teams To Score — Ambos os times marcam (✅ ou ❌).</p>
+      <p><strong>Escanteios</strong>: Média de escanteios por partida.</p>
+      <p><strong>Cartões</strong>: Média de cartões mostrados no jogo.</p>
+      <p><strong>Probabilidade de Vitória</strong>: Chances de cada resultado baseado em dados.</p>
+    </section>
+  </main>
+
+  <!-- ARTIGOS -->
+  <section class="artigos-recentes">
+    <h2>📌 Artigos Recentes</h2>
+
+    <div class="artigo">
+  <h3><a href="./artigos-apostas/apostas-odd-de-valor.html">O que é odd de valor e como encontrar</a></h3>
+  <p>Descubra como identificar apostas com potencial real, usando apenas lógica e números — sem depender de feeling.</p>
+</div>
+
+
+    <div class="artigo">
+  <h3><a href="./artigos-apostas/apostas-gestao-banca.html">Como evitar quebrar a banca</a></h3>
+  <p>Dicas práticas de controle emocional e gestão de banca pra apostar melhor.</p>
+</div>
+
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>Se esse conteúdo te ajudou, me dá uma moral aí, amigo(a)! Qualquer valor já fortalece 💜</p>
+
+    <div class="pix-box">
+      <p>📲 Minha chave Pix:</p>
+      <input type="text" value="5719d5e8-4a0d-4d40-af6d-340ff2e6eb21" id="chavePix" readonly>
+      <button onclick="copiarPix()">Copiar chave</button>
+    </div>
+
+    <small>BetGenios © 2025 – Sem promessas, só ideias reais.</small>
+  </footer>
+
+
+  <script>
+    const jogos = [
+  // Rodada 13
+  { equipe: "Internacional x Vitória", camp: "Série A", horario: "12/07 - 16:30", over15:82, over25:60, over35:35, btts:"✅", esc:10, cart:4.8, prob:"Inter 60% - E 25% - Vitória 15%" },
+  { equipe: "Bahia x Atlético‑MG", camp: "Série A", horario: "12/07 - 21:00", over15:85, over25:62, over35:38, btts:"✅", esc:10.2, cart:5.0, prob:"Atlético‑MG 55% - E 30% - Bahia 15%" },
+  { equipe: "Corinthians x Red Bull Bragantino", camp: "Série A", horario: "13/07 - 19:00", over15:78, over25:55, over35:30, btts:"❌", esc:10.1, cart:4.7, prob:"Corinthians 50% - E 30% - Bragantino 20%" },
+
+  { equipe: "Cruzeiro x Grêmio", camp: "Série A", horario: "13/07 - 20:30", over15:65, over25:40, over35:20, btts:"✅", esc:9.5, cart:5.1, prob:"Cruzeiro 52% - E 28% - Grêmio 20%" },
+  { equipe: "Fortaleza x Ceará", camp: "Série A", horario: "13/07 - 20:30", over15:60, over25:38, over35:18, btts:"❌", esc:8.2, cart:4.6, prob:"Fortaleza 55% - E 25% - Ceará 20%" },
+  { equipe: "Juventude x Sport", camp: "Série A", horario: "14/07 - 20:00", over15:62, over25:42, over35:22, btts:"✅", esc:8.9, cart:4.9, prob:"Juventude 48% - E 30% - Sport 22%" },
+
+  // Rodada 14
+  { equipe: "Botafogo x Vitória", camp: "Série A", horario: "15/07 - 21:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Palmeiras x Mirassol", camp: "Série A", horario: "16/07 - 19:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Ceará x Corinthians", camp: "Série A", horario: "16/07 - 19:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Red Bull Bragantino x São Paulo", camp: "Série A", horario: "16/07 - 20:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Santos x Flamengo", camp: "Série A", horario: "16/07 - 21:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Fluminense x Cruzeiro", camp: "Série A", horario: "17/07 - 19:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  // Existem 4 jogos sem horário definido ainda: Atlético‑MG x Sport, Grêmio x Fortaleza, Bahia x Internacional, Juventude x Vasco
+
+  // Rodada 15
+  { equipe: "Fortaleza x Bahia", camp: "Série A", horario: "19/07 - 16:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Vasco x Grêmio", camp: "Série A", horario: "19/07 - 17:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Mirassol x Santos", camp: "Série A", horario: "19/07 - 18:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Vitória x Red Bull Bragantino", camp: "Série A", horario: "19/07 - 18:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "São Paulo x Corinthians", camp: "Série A", horario: "19/07 - 21:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Internacional x Ceará", camp: "Série A", horario: "20/07 - 11:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Cruzeiro x Juventude", camp: "Série A", horario: "20/07 - 16:00", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Palmeiras x Atlético‑MG", camp: "Série A", horario: "20/07 - 17:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Sport x Botafogo", camp: "Série A", horario: "20/07 - 17:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+  { equipe: "Flamengo x Fluminense", camp: "Série A", horario: "20/07 - 19:30", over15:"--", over25:"--", over35:"--", btts:"--", esc:"--", cart:"--", prob:"--" },
+ 
+  // Nova leva: Série B
+ { equipe: "CRB x Coritiba", camp: "Série B", horario: "10/07 - 21:35", over15:75, over25:50, over35:28, btts:"✅", esc:10.6, cart:4.8, prob:"Coritiba 55% - E 25% - CRB 20%" },
+  { equipe: "Botafogo‑SP x Volta Redonda", camp: "Série B", horario: "11/07 - 19:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Botafogo‑SP 50% - E 25% - Volta Redonda 25%" },
+  { equipe: "Vila Nova x Operário‑PR", camp: "Série B", horario: "11/07 - 21:30", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Vila Nova 52% - E 28% - Operário 20%" },
+{ equipe: "Novorizontino x América‑MG", camp: "Série B", horario: "12/07 - 16:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Novorizontino 50% - E 30% - América‑MG 20%" },
+{ equipe: "Paysandu x Atlético‑GO", camp: "Série B", horario: "12/07 - 18:30", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Atlético‑GO 55% - E 25% - Paysandu 20%" },
+{ equipe: "Athletico‑PR x Goiás", camp: "Série B", horario: "12/07 - 20:30", over15:75, over25:50, over35:28, btts:"✅", esc:10.6, cart:4.8, prob:"Athletico‑PR 60% - E 25% - Goiás 15%" },
+{ equipe: "Operário‑PR x Atlético‑GO", camp: "Série B", horario: "22/07 - 19:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Operário‑PR 50% - E 30% - Atlético‑GO 20%" },
+{ equipe: "Athletico‑PR x Ferroviária", camp: "Série B", horario: "22/07 - 20:00", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Athletico‑PR 55% - E 25% - Ferroviária 20%" },
+{ equipe: "Athletico‑MG x Coritiba", camp: "Série B", horario: "22/07 - 21:30", over15:75, over25:50, over35:28, btts:"✅", esc:10.6, cart:4.8, prob:"Athletico‑MG 60% - E 25% - Coritiba 15%" },
+{ equipe: "Vila Nova x CRB", camp: "Série B", horario: "22/07 - 21:35", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Vila Nova 55% - E 25% - CRB 20%" },
+
+  // Libertadores — 5 jogos
+  { equipe: "São Paulo x Atlético Nacional", camp: "Libertadores", horario: "13/08 - TBA", over15:80, over25:60, over35:30, btts:"✅", esc:10, cart:5.0, prob:"São Paulo 50% - E 30% - Atl‑Nac 20%" },
+  { equipe: "LDU x Botafogo", camp: "Libertadores", horario: "13/08 - TBA", over15:78, over25:55, over35:25, btts:"✅", esc:10, cart:5.0, prob:"LDU 55% - E 25% - Botafogo 20%" },
+
+  { equipe: "River Plate x Libertad", camp: "Libertadores", horario: "14/08 - TBA", over15:82, over25:60, over35:30, btts:"✅", esc:10.5, cart:5.0, prob:"River 55% - E 25% - Libertad 20%" },
+{ equipe: "Palmeiras x Universitario", camp: "Libertadores", horario: "14/08 - TBA", over15:80, over25:58, over35:28, btts:"✅", esc:10.5, cart:5.0, prob:"Palmeiras 60% - E 25% - Universitario 15%" },
+{ equipe: "Vélez Sarsfield x Fortaleza", camp: "Libertadores", horario: "13/08 - TBA", over15:78, over25:55, over35:25, btts:"✅", esc:10.5, cart:5.0, prob:"Vélez 50% - E 30% - Fortaleza 20%" },
+
+  // Sul‑Americana — 5 jogos
+   { equipe: "Central Córdoba x Cerro Largo", camp: "Sul-Americana", horario: "15/07 - 18:00", over15:70, over25:45, over35:20, btts:"❌", esc:10.0, cart:4.8, prob:"Central Córdoba 55% - E 25% - Cerro Largo 20%" },
+  { equipe: "Bahia x América de Cali", camp: "Sul‑Americana", horario: "15/07 - 20:30", over15:75, over25:50, over35:28, btts:"✅", esc:10.0, cart:4.8, prob:"Bahia 60% - E 25% - América 15%" },
+
+{ equipe: "Independiente del Valle x Vasco", camp: "Sul-Americana", horario: "15/07 - 20:30", over15:75, over25:50, over35:28, btts:"✅", esc:10.2, cart:4.8, prob:"Independiente 55% - E 25% - Vasco 20%" },
+{ equipe: "Bolívar x Palestino", camp: "Sul‑Americana", horario: "16/07 - 18:00", over15:70, over25:45, over35:22, btts:"❌", esc:10.2, cart:4.8, prob:"Bolívar 60% - E 25% - Palestino 15%" },
+{ equipe: "Alianza Lima x Grêmio", camp: "Sul‑Americana", horario: "16/07 - 20:30", over15:72, over25:47, over35:25, btts:"✅", esc:10.2, cart:4.8, prob:"Alianza 55% - E 25% - Grêmio 20%" },
+
+];
+
+
+    function filtrar(campeonato) {
+      const container = document.getElementById("jogos-container");
+      container.innerHTML = "";
+      jogos.forEach(jogo => {
+        if (campeonato === 'todos' || jogo.camp === campeonato) {
+          container.innerHTML += `
+            <div class="bloco-jogo">
+              <h3>${jogo.equipe} (${jogo.camp})</h3>
+              <p>🗓 ${jogo.horario}</p>
+              <table>
+                <thead>
+                  <tr><th>Over 1.5</th><th>Over 2.5</th><th>Over 3.5</th><th>BTTS</th><th>Escanteios</th><th>Cartões</th><th>Vitória</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>${jogo.over15}%</td><td>${jogo.over25}%</td><td>${jogo.over35}%</td><td>${jogo.btts}</td><td>${jogo.esc}</td><td>${jogo.cart}</td><td>${jogo.prob}</td></tr>
+                </tbody>
+              </table>
+            </div>`;
+        }
+      });
+    }
+
+    filtrar('todos'); 
+  </script>
+</body>
+</html>
