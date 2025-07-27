@@ -118,31 +118,33 @@
 
   <script>
     const jogos = [
-  // Série A – rodada 14
-{ equipe: "Botafogo x Vitória", camp: "Série A", horario: "15/07 - 21:30", over15:80, over25:55, over35:30, btts:"✅", esc:10.0, cart:4.8, prob:"Botafogo 55% - E 30% - Vitória 15%" },
-{ equipe: "Palmeiras x Mirassol", camp: "Série A", horario: "16/07 - 19:00", over15:83, over25:60, over35:33, btts:"✅", esc:10.2, cart:4.9, prob:"Palmeiras 65% - E 25% - Mirassol 10%" },
-{ equipe: "Ceará x Corinthians", camp: "Série A", horario: "16/07 - 19:30", over15:78, over25:52, over35:28, btts:"❌", esc:9.8, cart:4.7, prob:"Ceará 50% - E 30% - Corinthians 20%" },
-{ equipe: "Red Bull Bragantino x São Paulo", camp: "Série A", horario: "16/07 - 20:00", over15:82, over25:60, over35:32, btts:"✅", esc:10.0, cart:4.8, prob:"Bragantino 60% - E 25% - São Paulo 15%" },
-{ equipe: "Santos x Flamengo", camp: "Série A", horario: "16/07 - 21:30", over15:80, over25:58, over35:30, btts:"✅", esc:10.0, cart:5.0, prob:"Santos 45% - E 30% - Flamengo 25%" },
-{ equipe: "Fluminense x Cruzeiro", camp: "Série A", horario: "17/07 - 19:30", over15:78, over25:55, over35:28, btts:"✅", esc:10.0, cart:4.9, prob:"Fluminense 60% - E 25% - Cruzeiro 15%" },
+  // RODADA 17 – Série A (encerrando hoje)
+  { equipe: "Mirassol x Vitória", camp: "Série A", horario: "26/07 - 18:30", over15:78, over25:52, over35:28, btts:"✅", esc:10.1, cart:5.0, prob:"Mirassol 50% - E 30% - Vitória 20%" },
+  { equipe: "Botafogo x Corinthians", camp: "Série A", horario: "26/07 - 18:30", over15:80, over25:55, over35:30, btts:"✅", esc:10.1, cart:5.0, prob:"Botafogo 50% - E 30% - Corinthians 20%" },
+  
+  // RODADA 18
+  { equipe: "São Paulo x Fluminense", camp: "Série A", horario: "27/07 - 16:00", over15:80, over25:55, over35:30, btts:"✅", esc:10.1, cart:5.1, prob:"São Paulo 50% - E 30% - Fluminense 20%" },
+  { equipe: "Cruzeiro x Ceará", camp: "Série A", horario: "27/07 - 16:00", over15:78, over25:52, over35:28, btts:"❌", esc:10.1, cart:5.1, prob:"Cruzeiro 55% - E 30% - Ceará 15%" },
+  { equipe: "Internacional x Vasco", camp: "Série A", horario: "27/07 - 18:30", over15:82, over25:60, over35:32, btts:"✅", esc:10.1, cart:5.1, prob:"Inter 60% - E 25% - Vasco 15%" },
+  { equipe: "Bahia x Juventude", camp: "Série A", horario: "27/07 - 18:30", over15:75, over25:50, over35:24, btts:"❌", esc:10.1, cart:5.1, prob:"Bahia 50% - E 30% - Juventude 20%" },
+  { equipe: "Flamengo x Atlético‑MG", camp: "Série A", horario: "27/07 - 20:30", over15:83, over25:62, over35:35, btts:"✅", esc:10.1, cart:5.1, prob:"Flamengo 60% - E 25% - Atlético‑MG 15%" },
 
-// Série A – rodada 15
-{ equipe: "Fortaleza x Bahia", camp: "Série A", horario: "19/07 - 16:00", over15:75, over25:50, over35:25, btts:"❌", esc:9.5, cart:4.7, prob:"Fortaleza 55% - E 30% - Bahia 15%" },
-{ equipe: "Vasco x Grêmio", camp: "Série A", horario: "19/07 - 17:30", over15:77, over25:53, over35:27, btts:"✅", esc:9.8, cart:4.8, prob:"Vasco 50% - E 30% - Grêmio 20%" },
-{ equipe: "Mirassol x Santos", camp: "Série A", horario: "19/07 - 18:30", over15:76, over25:52, over35:26, btts:"✅", esc:9.7, cart:4.7, prob:"Mirassol 45% - E 30% - Santos 25%" },
-{ equipe: "Vitória x Red Bull Bragantino", camp: "Série A", horario: "19/07 - 18:30", over15:74, over25:50, over35:24, btts:"❌", esc:9.5, cart:4.6, prob:"Vitória 40% - E 30% - Bragantino 30%" },
-{ equipe: "São Paulo x Corinthians", camp: "Série A", horario: "19/07 - 21:00", over15:80, over25:58, over35:31, btts:"✅", esc:10.0, cart:4.9, prob:"São Paulo 50% - E 30% - Corinthians 20%" },
-{ equipe: "Internacional x Ceará", camp: "Série A", horario: "20/07 - 11:00", over15:78, over25:55, over35:28, btts:"✅", esc:10.0, cart:4.8, prob:"Inter 60% - E 25% - Ceará 15%" },
-{ equipe: "Cruzeiro x Juventude", camp: "Série A", horario: "20/07 - 16:00", over15:76, over25:52, over35:27, btts:"❌", esc:9.8, cart:4.7, prob:"Cruzeiro 55% - E 30% - Juventude 15%" },
-{ equipe: "Palmeiras x Atlético‑MG", camp: "Série A", horario: "20/07 - 17:30", over15:82, over25:60, over35:33, btts:"✅", esc:10.2, cart:5.0, prob:"Palmeiras 60% - E 25% - Atlético‑MG 15%" },
-{ equipe: "Sport x Botafogo", camp: "Série A", horario: "20/07 - 17:30", over15:74, over25:50, over35:26, btts:"✅", esc:9.8, cart:4.8, prob:"Sport 45% - E 30% - Botafogo 25%" },
-{ equipe: "Flamengo x Fluminense", camp: "Série A", horario: "20/07 - 19:30", over15:80, over25:60, over35:32, btts:"✅", esc:10.2, cart:5.0, prob:"Flamengo 55% - E 30% - Fluminense 15%" },
+  // RODADA 19 – 02 a 03/08 (rodada concluída só dia 3 com jogos confirmados)
+  { equipe: "Fluminense x Grêmio", camp: "Série A", horario: "03/08 - 16:00", over15:80, over25:55, over35:30, btts:"✅", esc:10.1, cart:5.1, prob:"Fluminense 55% - E 30% - Grêmio 15%" },
+  { equipe: "Botafogo x Cruzeiro", camp: "Série A", horario: "03/08 - 16:00", over15:78, over25:52, over35:28, btts:"✅", esc:10.1, cart:5.1, prob:"Botafogo 50% - E 30% - Cruzeiro 20%" },
+  { equipe: "Corinthians x Fortaleza", camp: "Série A", horario: "03/08 - 16:00", over15:75, over25:50, over35:24, btts:"❌", esc:10.1, cart:5.1, prob:"Corinthians 55% - E 30% - Fortaleza 15%" },
+  { equipe: "Atlético‑MG x Bragantino", camp: "Série A", horario: "03/08 - 18:30", over15:82, over25:60, over35:32, btts:"✅", esc:10.1, cart:5.1, prob:"Atl‑MG 60% - E 25% - Bragantino 15%" },
+  { equipe: "Ceará x Flamengo", camp: "Série A", horario: "03/08 - 18:30", over15:78, over25:55, over35:30, btts:"❌", esc:10.1, cart:5.1, prob:"Ceará 50% - E 30% - Flamengo 20%" },
+  { equipe: "Internacional x São Paulo", camp: "Série A", horario: "03/08 - 20:30", over15:80, over25:58, over35:32, btts:"✅", esc:10.1, cart:5.1, prob:"Inter 60% - E 25% - São Paulo 15%" },
+  { equipe: "Vitória x Palmeiras", camp: "Série A", horario: "03/08 - 20:30", over15:74, over25:50, over35:24, btts:"❌", esc:10.1, cart:5.1, prob:"Vitória 40% - E 30% - Palmeiras 30%" },
+  { equipe: "Santos x Juventude", camp: "Série A", horario: "04/08 - 20:00", over15:75, over25:52, over35:25, btts:"✅", esc:10.1, cart:5.1, prob:"Santos 50% - E 30% - Juventude 20%" },
 
-  // Nova leva: Série B
- { equipe: "Operário‑PR x Atlético‑GO", camp: "Série B", horario: "22/07 - 19:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Operário‑PR 50% - E 30% - Atlético‑GO 20%" },
-{ equipe: "Athletico‑PR x Ferroviária", camp: "Série B", horario: "22/07 - 20:00", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Athletico‑PR 55% - E 25% - Ferroviária 20%" },
-{ equipe: "Athletico‑MG x Coritiba", camp: "Série B", horario: "22/07 - 21:30", over15:75, over25:50, over35:28, btts:"✅", esc:10.6, cart:4.8, prob:"Athletico‑MG 60% - E 25% - Coritiba 15%" },
-{ equipe: "Vila Nova x CRB", camp: "Série B", horario: "22/07 - 21:35", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"Vila Nova 55% - E 25% - CRB 20%" },
+  // SÉRIE B — jogos confirmados dia 27/07 (rodada 17)
+  { equipe: "Coritiba x Amazonas", camp: "Série B", horario: "27/07 - 16:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Coritiba 55% - E 25% - Amazonas 20%" },
+  { equipe: "Volta Redonda x Vila Nova", camp: "Série B", horario: "27/07 - 16:00", over15:70, over25:45, over35:22, btts:"✅", esc:10.6, cart:4.8, prob:"Volta Redonda 50% - E 30% - Vila Nova 20%" },
+  { equipe: "América‑MG x Athletico‑PR", camp: "Série B", horario: "27/07 - 18:30", over15:72, over25:47, over35:25, btts:"✅", esc:10.6, cart:4.8, prob:"América‑MG 55% - E 25% - Athletico‑PR 20%" },
+  { equipe: "Atlético‑GO x Chapecoense", camp: "Série B", horario: "27/07 - 19:00", over15:70, over25:45, over35:22, btts:"❌", esc:10.6, cart:4.8, prob:"Atl‑GO 50% - E 30% - Chapecoense 20%" },
+
 
   // Libertadores — 5 jogos
   { equipe: "São Paulo x Atlético Nacional", camp: "Libertadores", horario: "13/08 - TBA", over15:80, over25:60, over35:30, btts:"✅", esc:10, cart:5.0, prob:"São Paulo 50% - E 30% - Atl‑Nac 20%" },
